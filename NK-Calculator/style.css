@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    opacity: 0;
+    background-color: #ABDCFF;
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: red 3px solid; */
+}
+
+/* Second Container */
+.firstContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: red 3px solid; */
+}
+
+header {
+    background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 55%);
+    margin-top: 3%;
+    padding: 18px 30px;
+    border-radius: 13px;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    color: #293462;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+#formOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    padding: 1% 3%;
+    /* width: 450px; */
+    /* width можно потом убрать */
+    /* border: green 3px solid; */
+}
+
+#selector {
+    font-family: 'Merriweather', serif;
+    color: #293462;
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.spouse {
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* padding: 30px; */
+    /* border: pink 3px solid; */
+}
+
+.spouseContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 10px;
+    padding: 40px;
+    /* border: red 3px solid; */
+}
+
+.memberOne,
+.memberTwo 
+{
+    font-family: 'Merriweather', serif;
+    font-size: 21px;
+    font-weight: 300;
+    color: #293462;
+}
+
+.in {
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #293462;
+    padding: 7px;
+    margin: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 5px outset;
+}
+
+.titleMiddle {
+    background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 55%);
+    margin-top: 2%;
+    padding: 18px 30px;
+    border-radius: 10px;
+}
+
+#titleTwo {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #293462;
+}
+
+#formTwo {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    margin-top: 2%;
+    /* border: green 3px solid; */
+}
+
+.formExpenses {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #293462;
+}
+
+.input {
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    font-weight: 100;
+    color: #293462;
+    padding: 1%;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    border: 3px outset;
+}
+
+.calcBtn {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #293462;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 15px;
+    border: 3px outset;
+    background-color: transparent;
+    margin: 3% 0 3% 0;
+}
+
+.exitBtn {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #293462;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 15px;
+    border: 3px outset;
+    background-color: transparent;
+    margin: 3% 0 3% 0;
+}
+
+.calcBtn:hover,
+.exitBtn:hover
+{
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #293462;
+}
+
+.dollarCoin {
+    animation: dollarCoin 5s linear 0s normal infinite;
+    -webkit-animation: dollarCoin 5s linear 0s normal infinite;
+}
+
+@keyframes dollarCoin {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+@-webkit-keyframes dollarCoin {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+/* Second Container */
+.secondContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    min-height: 100vh;
+    display: none;
+    /* border: yellow 3px solid; */
+}
+
+.preCalcContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calcContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.5);
+    padding: 20px 40px;
+    min-height: 100vh;
+}
+
+.listOne,
+.listTwo
+{
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #293462;
+    padding: 10px;
+}
+
+.size {
+    font-size: 20px;
+}
+
+.titleMiddleSec,
+.conclusion
+{
+    background-color: #FFC3C3;
+    width: 60%;
+    margin-top: 1.5%;
+    padding: 7px 13px;
+}
+
+#titleMonth {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #293462;
+    margin: 0;
+    text-align: center;
+}
+
+#titleSummary,
+#titleIncome,
+#titleSummary,
+#titleExpenses,
+#titleAssesst
+{
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #293462;
+    /* margin: 0; */
+}
+
+.name {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #293462;
+}
+
+.percents {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #293462;
+}
+
+.assesstment {
+    text-align: center;
+}
+
+.result {
+    font-family: 'Merriweather', serif;
+    font-size: 23px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #293462;
+}
+
+.ps {
+    font-family: 'Merriweather', serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+	font-weight: 300;
+    color: #293462;
+	text-align: center;
+	padding: 10px 15px 20px 15px;
+}
+
+
+
+ /* Horizontal Adaptation */
+@media all and (max-width: 1100px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    /* .ps {
+        opacity: 0;
+    } */
+}
+
+@media all and (max-width: 800px) {
+    header h1 {
+        font-size: 27px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    header {
+        padding: 9px 15px;
+    }
+    
+    header h1 {
+        font-size: 23px;
+    }
+
+    #selector {
+        font-size: 15px;
+        width: 40%;
+        padding: 7px;
+    }
+
+    .memberOne,
+    .memberTwo 
+    {
+        font-size: 20px;
+        padding: 0px 0px 5px 0px;
+    }
+
+    .titleMiddle {
+        margin-top: 0%;
+    }
+
+    .in {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #titleTwo {
+        font-size: 19px;
+    }
+
+    .formExpenses {
+        font-size: 16px;
+    }
+
+    .input {
+        font-size: 14px;
+        padding: 2%;
+    }
+    
+    .calcBtn {
+        font-size: 18px;
+        padding: 1.5% 2.1%;
+    }
+    
+    .titleMiddleSec,
+    .conclusion
+    {
+        width: 50%;
+        margin-top: 1.5%;
+    }
+
+    #titleMonth {
+        font-size: 17px;
+        letter-spacing: 1.5px;
+    }
+
+    #titleSummary,
+    #titleIncome,
+    #titleSummary,
+    #titleExpenses,
+    #titleAssesst
+    {
+        font-size: 15px;
+        letter-spacing: 1.5px;
+    }
+
+    .result {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .percents {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    header {
+        padding: 7px 11px;
+    }
+    
+    header h1 {
+        font-size: 20px;
+    }
+
+    #selector {
+        font-size: 13px;
+        width: 31%;
+    }
+
+    .spouse {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .spouseContainer {
+        width: 80%;
+    }
+
+    .memberOne,
+    .memberTwo 
+    {
+        font-size: 18px;
+    }
+
+    .in {
+        font-size: 13px;
+    }
+
+    #titleTwo {
+        font-size: 18px;
+    }
+
+    .formExpenses {
+        font-size: 15px;
+    }
+
+    .input {
+        font-size: 13px;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    .calcBtn {
+        font-size: 15px;
+    }
+    
+    .titleMiddleSec,
+    .conclusion
+    {
+        width: 55%;
+    }
+
+    .result {
+        font-size: 18px;
+    }
+
+    .name {
+        font-size: 17px;
+    }
+
+    .percents {
+        font-size: 17px;
+    }
+
+}
+
+@media all and (max-width: 400px) {
+    header {
+        padding: 5px 10px;
+    }
+    
+    header h1 {
+        font-size: 16px;
+    }
+
+    #selector {
+        font-size: 11px;
+    }
+
+    /* .spouseContainer {
+        padding: 17px;
+    } */
+    
+    /* .memberOne,
+    .memberTwo 
+    {
+    font-size: 14px;
+    } */
+
+    /* .titleMiddle {
+        margin-top: 1%;
+        padding: 7px 11px;
+    } */
+    
+    /* #titleTwo {
+        font-size: 16px;
+    }
+ */
+    /* .in {
+    font-size: 10px;
+    } */
+
+    /* .formExpenses {
+    font-size: 14px;
+    } */
+
+    /* .input {
+    font-size: 12px;
+    } */
+
+    /* .calcBtn {
+        font-size: 15px;
+    } */
+    
+    .titleMiddleSec,
+    .conclusion
+    {
+        width: 90%;
+        padding: 7px 10px 7px 15px;
+    }
+
+    #titleMonth {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    #titleSummary,
+    #titleIncome,
+    #titleSummary,
+    #titleExpenses,
+    #titleAssesst
+    {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .listOne,
+    .listTwo
+    {
+        padding: 7px;
+    }
+}
+
+@media all and (max-width: 350px) {
+    header {
+        padding: 13px 9px;
+    }
+    
+    header h1 {
+        font-size: 15px;
+    }
+
+    .memberOne,
+    .memberTwo 
+    {
+        font-size: 15px;
+    }
+    
+    #titleTwo {
+        font-size: 15px;
+    }
+
+    .titleMiddleSec,
+    .conclusion
+    {
+        width: 95%;
+    }
+}
+
+@media all and (max-width: 300px) {
+    header {
+        padding: 15px 10px;
+    }
+    
+    header h1 {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    #selector {
+        font-size: 12px;
+        width: 50%;
+    }
+
+    #formTwo {
+        width: 70%;
+    }
+
+    .formExpenses {
+        font-size: 14px;
+    }
+    
+    .titleMiddleSec,
+    .conclusion
+    {
+        width: 100%;
+    }
+
+    .result {
+        font-size: 18px;
+    }
+    
+    .name {
+        font-size: 16px;
+    }
+    
+    .percents {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia Krainova Portfolio | Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mainContainer">
+<!-- First Container -->
+        <div class="firstContainer">
+            <header>
+                <h1>Household expenses payment <br> of each working family member</h1>
+            </header>
+            <form id="formOne">
+                <select id="selector">
+                    <option selected disabled value="chooseMonth">Choose a Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <div class="spouse">
+                    <div class="spouseContainer">
+                        <label class="memberOne">Family Member #1</label>
+                        <input id="nameOne" class="in" type="text" placeholder="Name ...">
+                        <input id="incomeOne" class="in" type="text" placeholder="Monthly income in $ ...">
+                    </div>
+                    <div class="spouseContainer">
+                        <label class="memberTwo">Family Member #2</label>
+                        <input id="nameTwo" class="in" type="text" placeholder="Name ...">
+                        <input id="incomeTwo" class="in" type="text" placeholder="Monthly income in $ ...">
+                    </div>
+                </div>                
+            </form>
+            <div class="titleMiddle">
+                <h2 id="titleTwo">Expenses in <span class="selectedMonth"></span>:</h2>
+            </div>
+            <form id="formTwo">
+                <label class="formExpenses">Rent:</label>
+                <input id="rent" class="input" type="text" placeholder="0000.00">
+                <label class="formExpenses">Utilites:</label>
+                <input id="utilites" class="input" type="text" placeholder="0000.00">
+                <label class="formExpenses">Transport:</label>
+                <input id="transport" class="input" type="text" placeholder="0000.00">
+                <label class="formExpenses">Food:</label>
+                <input id="food" class="input" type="text" placeholder="0000.00">
+                <label class="formExpenses">Household goods:</label>
+                <input id="goods" class="input" type="text" placeholder="0000.00">
+                <label class="formExpenses">Kid Care:</label>
+                <input id="kid" class="input" type="text" placeholder="0000.00">
+                <label class="formExpenses">Pet Care:</label>
+                <input id="pet" class="input" type="text" placeholder="0000.00">
+                <label class="formExpenses">Cleaning service:</label>
+                <input id="cleaning" class="input" type="text" placeholder="0000.00">
+                <label class="formExpenses">Other expenses:</label>
+                <input id="other" class="input" type="text" placeholder="0000.00">
+            </form>
+                <button class="calcBtn">Calcutate</button>
+            <img class="dollarCoin" src="https://cdn.glitch.global/b8defa2d-4490-42d6-b31d-00ba52aab25b/Dollar.jpeg?v=1655311384396" alt="Dollar" width="150px">
+                <button class="exitBtn"><a href="/calcConvert.html">Exit</a></button>
+                <p class="ps">Someimages on this website have been taken from the Internet for educational purpose</p>
+        </div>
+<!-- Second Container -->
+        <div class="secondContainer">
+            <div class="preCalcContainer">
+                <div class="calcContainer">
+                    <div class="titleMiddleSec">
+                        <h3 id="titleMonth" class="againSelectedMonth"></h3>
+                    </div>
+                    <div class="titleMiddleSec">
+                        <h3 id="titleSummary">Each family member contributed to the family budget:</h3>
+                    </div>
+                    <ul class="listOne" type="square">
+                        <li><span class="transferredPersonOne name"></span>: $ <span class="incomeFirstPerson size"></span>. This is <span class="percentDeposPersonOne percents"></span>% of monthly income.</li>
+                        <li><span class="transferredPersonTwo name"></span>: $ <span class="incomeSecondPerson size"></span>. This is <span class="percentDeposPersonTwo percents"></span>% of monthly income.</li>
+                    </ul>
+                    <div class="titleMiddleSec">
+                        <h3 id="titleIncome" class="">Total income: $<span class="sumIncome"></span></h3>
+                    </div>
+                    <div class="titleMiddleSec">
+                        <h3 id="titleSummary" class="">Family spending this month:</h3>
+                    </div>
+                    <ul class="listTwo" type="square">
+                        <li>Rent: <span id="rentCost"></span></li>
+                        <li>Utilites: <span id="utilitesCost"></span></li>
+                        <li>Transport: <span id="transportCost"></span></li>
+                        <li>Food: <span id="foodCost"></span></li>
+                        <li>Household goods: <span id="goodsCost"></span></li>
+                        <li>Kid Care: <span id="kidCost"></span></li>
+                        <li>Pet Care: <span id="petCost"></span></li>
+                        <li>Cleaning service: <span id="cleaningCost"></span></li>
+                        <li>Other expenses: <span id="otherCost"></span></li>
+                    </ul>
+                    <div class="titleMiddleSec">
+                        <h3 id="titleExpenses" class="">Total expenses: $<span class="sumExpenses"></span></h3>
+                    </div>
+                    <div class="titleMiddleSec">
+                        <h3 id="titleAssesst" class="assesstment">Financial Assessment</h3>
+                    </div>
+                    <div class="conclusion">
+                        <p class="result"></p>
+                    </div>
+                    <button class="exitBtn"><a href="/calcConvert.html">Exit</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- <button class="exitBtn"><a href="/timer.html">EXIT</a></button> -->

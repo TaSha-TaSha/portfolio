@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia Krainova Portfolio | Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="containerOne">
+        <img class="mouse" src="Mouse.jpeg" alt="Mouse">
+        <p id="parOne" class="par"></p>
+        <p id="parTwo" class="par"></p>
+        <p id="parThree" class="par"></p>
+        <div class="btnContainer">
+            <button id="yesBtn" class="btn">Yes</button>
+            <button id="noBtn" class="btn">No</button>
+        </div>
+    </div>
+    <div class="containerTwoMain">
+        <div class="containerTwo">
+            <header>
+                <h1>Let the game start!</h1>
+            </header>
+            <div class="rulesContainer">
+                <p class="rule">I thought about delicious cheese.</p>
+                <p class="rule">Guess how many pieces?</p>
+                <p class="rule">Try the number from <span class="number">1</span> to <span class="number">20</span>.</p>
+            </div>
+            <div class="gameContainer">
+                <h2><span id="lastAttempt"></span> <span id="limited">Attempt</span> <span id="attemptNumber">#1</span></h2>
+                <p class="attemptRule">You have <span id="attemptsleft" class="number">5</span> attempts left</p>
+                <div class="inputContainer">
+                    <input id="inputField" type="text" placeholder="Your guess ...">
+                    <h3>Numbers you have tried: <span id="chosenNumber"> </span></h3>
+                </div>
+                <div class="btnContainerDown">
+                    <button id="enter" class="enterBtn">Enter</button>
+                    <button id="play" class="playBtn">Play Again</button>
+                    <button id="exit" class="exitBtn"><a href="/gameQuizQuotes.html">Exit</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+

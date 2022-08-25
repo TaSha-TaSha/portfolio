@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia Krainova Portfolio | Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="header">
+            <h1></h1>
+        </div>
+        <div id="headerInput">
+            <input id="input" type="text" spellcheck="false" placeholder=" Please enter city...">
+        </div>
+        <div class="containerShow">
+        <div id="whereWhen">
+            <p id="city"></p>
+            <p id="date"></p>
+        </div>
+
+        <div id="tempContainer">
+            <p id="temperature"></p>
+            <!-- добавила -->
+            <img id="icon" src="" width="90px" height="90px">
+            <!--  -->
+        </div>
+        <div id="nowContainer">
+            <p id="FeelsLike"></p>
+            <p id="conditions"></p>
+            <p id="visibility"></p>
+            <p id="pressure"></p>
+        </div>
+        <div id="lastContainer">
+            <p id="variations"></p>
+        </div>
+    </div>
+    </div>
+    <div class="backBtnContainer">
+        <a href="/index.html"><button class="backBtn">Go Back</button></a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+

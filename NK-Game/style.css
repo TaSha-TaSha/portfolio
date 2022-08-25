@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #B8F1B0;
+    /* min-height: 100vh; */
+}
+
+.containerOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 99vh;
+    /* justify-content: center; */
+    /* border: red 3px solid; */
+}
+
+.mouse {
+    width: 280px;
+    height: 310px;
+    border-radius: 7px;
+    margin-top: 2%;
+    /* border: 11px outset; */
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin-top: 3%;
+    opacity: 0;
+    /* border:  red 3px solid; */
+}
+
+.toShow {
+    opacity: 1;
+    transition: all 3s ease;
+}
+
+.btn {
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    padding: 7px 10px;
+    width: 20%;
+    border: #ffffff 5px outset;
+    color: #000000;
+}
+
+#yesBtn {
+    background-color: #F900BF;
+}
+
+#noBtn {
+    background-color: #9900F0;
+}
+
+.par {
+    font-family: 'Merriweather', serif;
+    font-size: 21px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    padding: 0px;
+    margin-top: 2%;
+    color: #293462;
+}
+
+.containerTwoMain {
+    display: flex;
+    justify-content: center;
+    /* border: blue 3px solid; */
+}
+
+.containerTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    width: 70%;
+    background-color: #F55353;
+    border-radius: 45% 0%;
+    border: #F6F54D 5px groove;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: #293462;
+    text-shadow: 1px 1px #F6F54D;
+    letter-spacing: 1px;
+}
+
+.rulesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.rule {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    color: #293462;
+    letter-spacing: 1px;
+    line-height: 2.5
+}
+
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    /* border: black 3px solid; */
+    margin: auto;
+}
+
+.number {
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    color: #293462;
+    background-color: #F6F54D;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #293462;
+}
+
+/* .attempt {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    color: #293462;
+} */
+
+.attemptNumber {
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    color: #293462;
+    background-color: #F6F54D;
+}
+
+.attemptRule {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #293462;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+
+#inputField {
+    padding: 7px;
+    width: 50%;
+    border: #ffffff 4px outset;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    color: #293462;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #293462;
+    margin-top: 7%;
+}
+
+
+.btnContainerDown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    padding: 7px;
+    /* border: blue 3px solid; */
+}
+
+.enterBtn,
+.playBtn,
+.exitBtn
+{
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    padding: 2px 3px;
+    margin: 5px;
+    width: 110px;
+    border: #ffffff 5px outset;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.enterBtn {
+    background-color: #37E2D5;
+}
+
+.playBtn {
+    background-color: #14C38E;
+}
+
+.exitBtn {
+    background-color: #FBCB0A;
+}
+
+
+
+/* Mobile Adaptation */
+/* @media all and (max-width: 900px) {
+
+} */
+
+/* @media all and (max-width: 800px) {
+} */
+
+@media all and (max-width: 600px) {
+    .btn {
+        font-size: 25px;
+        padding: 7px 10px;
+        width: 30%;
+        margin-top: 20px;
+    }
+
+    .containerTwo {
+        padding: 30px;
+        width: 85%;
+        margin-top: 80px;
+    }
+
+    header h1 {
+        font-size: 30px;
+        margin-left: 70px;
+    }
+    
+    .rule {
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 2;
+    }
+    
+    .number {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 25px;
+    }
+    
+    .attemptRule {
+        font-size: 15px;
+    }
+    
+    h3 {
+        font-size: 15px;
+    }
+    
+    .btnContainerDown {
+        width: 70%;
+        padding: 7px;
+    }
+    
+    .enterBtn,
+    .playBtn,
+    .exitBtn
+    {
+    font-size: 15px;
+    margin: 8px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .containerOne {
+        height: 100%;
+    }
+
+    .mouse {
+        width: 230px;
+        height: 270px;
+    }
+    
+    .btnContainer {
+        margin-top: 10%;
+    }
+
+    .btn {
+        font-size: 21px;
+        width: 160px;
+        margin: 10px;
+    }
+
+    /* .containerTwo {
+        padding: 30px;
+        width: 80%;
+    }
+ */
+
+    header h1 {
+        font-size: 23px;
+        margin-left: 43px;
+    }
+    
+    .rule {
+        font-size: 13px;
+        letter-spacing: .8px;
+        line-height: 1.5;
+    }
+    
+    .number {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .attemptRule {
+        font-size: 13px;
+    }
+    
+    h3 {
+        font-size: 13px;
+    }
+    
+    #inputField {
+        width: 150px;
+        font-size: 13px;
+    }
+    
+    .btnContainerDown {
+        width: 70%;
+    }
+    
+    .enterBtn,
+    .playBtn,
+    .exitBtn
+    {
+    font-size: 13px;
+    /* width: 110px; */
+    }
+
+    .gameContainer {
+        width: 100%;
+    }
+    
+
+
+
+}
+
+@media all and (max-width: 400px) {
+}
+
+
+
+
+
+
+
+
+
+

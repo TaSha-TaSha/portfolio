@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFD9C0;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+.containerOne {
+    background-image: url(https://cdn.glitch.global/b8defa2d-4490-42d6-b31d-00ba52aab25b/photoOne.jpeg?v=1655307208667);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    /* pдесь flex: 1 так как это ребенок для mainContainer */
+    min-height: 100vh;
+    /* высота нужна, чтобы фото поместилось в контейнер */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* это параметры уже для родителя */
+    /* align-items: center чтобы уменьшить размер кнопки */
+    margin-right: 0.5%;
+    border: 2px outset;
+    /* то есть мы сделали и родитель и ребенок в одном контейнере */
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.containerTwo {
+    background-image: url(https://cdn.glitch.global/b8defa2d-4490-42d6-b31d-00ba52aab25b/photoTwo.jpeg?v=1655307208343);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0.5%;
+    border: 2px outset;
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.containerThree {
+    background-image: url(https://cdn.glitch.global/b8defa2d-4490-42d6-b31d-00ba52aab25b/photoThree.jpeg?v=1655307205698);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0.5%;
+    border: 2px outset;
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.containerFour {
+    background-image: url(https://cdn.glitch.global/b8defa2d-4490-42d6-b31d-00ba52aab25b/photoFour.jpeg?v=1655307641249);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px outset;
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.goBtn {
+    width: 50%;
+    margin-top: 20%;
+    padding: 15px;
+    font-size: 17px;
+    font-family: 'Vollkorn', serif;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: #FFD9C0;
+    border: 3px outset;
+    transform: translate(0px, 0px);
+}
+
+.goBtn:hover, 
+.exitBtn {
+    cursor: pointer;
+}
+
+a {
+    color: #000000;
+    text-shadow: 2px 2px #ffffff;
+    text-decoration: none;
+}
+
+.exitBtn {
+    position: absolute;
+    color: #000000;
+    text-shadow: 2px 2px #ffffff;
+    font-size: 15px;
+    font-family: 'Vollkorn', serif;
+    text-transform: uppercase;
+    background-color: #FFD9C0;
+    bottom: 100px;
+    /* left: 130px; */
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+
+
+
+@media all and (max-width: 800px) {
+    .goBtn { 
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .goBtn { 
+        font-size: 10px;
+        width: 80%;
+        border: 2px outset;
+        padding: 8px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .exitBtn {
+        font-size: 10px;
+        left: 20px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .goBtn {
+        width: 90%;
+        
+    }
+}
+
+
+

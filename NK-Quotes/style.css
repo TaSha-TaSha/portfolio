@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://cdn.glitch.global/b8defa2d-4490-42d6-b31d-00ba52aab25b/Water.jpeg?v=1655316240024');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #30E3CA;
+}
+
+#videoOne, #videoTwo {
+    width: 350px;
+    height: 300px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 10px 3px #333C83;
+}
+
+img {
+    width: 270px;
+    height: 250px;
+    margin: 30px;
+    box-shadow: 3px 3px 10px 3px #333C83;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(156, 209, 32, 0.3); 
+    width: 570px;
+    margin: auto;
+    border-left: #FFD93D 27px double;
+    border-right: #FFD93D 27px double;
+    border-radius: 50%;
+    padding: 20px 30px;
+    margin-top: 50px;
+}
+
+.mainCont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    padding: 10px 20px;
+    background-image: linear-gradient(rgba(233, 200, 200, 0.3), rgba(0, 0, 0, 0.6)); 
+}
+
+.btnsCont{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Alegreya SC', serif;
+    font-size: 40px;
+    color: #333C83;
+    text-shadow: 15px 15px #ffffff;
+}
+
+.btnOne, 
+.btnTwo 
+{
+    font-family: 'Alegreya SC', serif;
+    font-size: 20px;
+    color: #333C83;
+    font-weight: bolder;
+    border: none;
+    box-shadow: 3px 3px 10px 3px #333C83;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.btnOne:hover, 
+.btnTwo:hover
+{
+    cursor: pointer;
+}
+
+.exitBtn {
+    font-family: 'Alegreya SC', serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 3px 5px;
+    width: 80px;
+    border: none;
+    border-radius: 15px;
+    border: 3px outset;
+    background-color: transparent;
+    margin-left: 50%;
+}
+
+.exitBtn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+a {
+    text-decoration: none;
+    color: #333C83;
+}
+
+.textCont {
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0px 15px;
+}
+
+.text{
+    font-family: 'Alegreya SC', serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    width: 90%;
+}
+
+.imgSize {
+    height: 400px;
+    margin-top: 0;
+}
+
+.textClass {
+    font-family: 'Alegreya SC', serif;
+    color: #ffffff;
+    font-size: 50px;
+    margin-top: 70px;
+}
+
+.contNew {
+    margin-top: 100px;
+}
+
+.textLast {
+    margin-top: 250px;
+    font-size: 100px;
+    font-style: italic;
+    color: #ffffff;
+    font-family: 'Alegreya SC', serif;
+}
+
+
+
+/* ----------------------Mobile Version-------------------------- */
+@media all and (max-width: 500px){
+    body {
+        background-size: 500px 1200px;
+    }
+    header {
+        width: 330px;
+        margin-top: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    #videoOne, #videoTwo {
+        width: 270px;
+        height: 200px;
+    }
+    .mainCont {
+        margin-top: -50px;
+    }
+    .btnsCont {
+        margin-top: 5px;
+        padding: 20px;
+    }
+    .btnOne, .btnTwo {
+        font-size: 15px;
+        padding: 5px;
+    }
+    .text {
+        font-size: 17px;
+    }
+    .imgSize {
+        height: 200px;
+        margin-top: 30px;
+    }
+    .textClass {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .contNew {
+        margin-top: 50px;
+    }
+    .textLast {
+        font-size: 30px;
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ПЕРВЫЙ ВАРИАНТ */
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://images.pexels.com/photos/175658/pexels-photo-175658.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #826F66;
+    overflow: hidden;
+}
+#mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    min-height: 100vh;
+}
+#btn {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: #ffffff;
+    font-weight: bolder;
+    color: #0E185F;
+    position: fixed;
+}
+#show {
+    display: none;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 150px;
+    margin-left: 150px;
+    font-weight: bolder;
+    color: #0E185F;
+    background-color: #ffffff;
+    padding: 15px;
+    width: 45%;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+
+@media all and (max-width: 500px){
+    body {
+        background-size: 490px 850px;
+    }
+    #btn {
+        font-size: 18px;
+    }
+    #show {
+        font-size: 15px;
+        margin-right: 30px;
+        width: 55%;
+    }
+}
+
+@media all and (max-width: 400px){
+    body {
+        background-size: 390px 950px;
+    }
+    #show {
+        width: 60%;
+    }
+}
+
+
+ */

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Natalia Krainova Portfolio | Unit Converter</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- length converter -->
+      <div class="mainContainer">
+         <div class="header">
+            <h1></h1>
+         </div>
+            <div class="insideContainer">
+               <div class="verticalOne">
+                  <select id="selectOne" class="selector">
+                     <option selected disabled value="option">Select</option>
+                     <option value="km">Kilometer</option>
+                     <option value="m">Metere</option>
+                     <option value="dm">Decimeter</option>
+                     <option value="cm">Centimeter</option>
+                     <option value="mm">Millimeter</option>
+                  </select>
+                  <input id="inputOne" type="text" placeholder="Amount here ..." class="inputField">
+               </div>
+               <div class="equalsContainer">
+                  <div class="one"></div>
+                  <div class="two"></div>
+               </div>
+               <div class="verticalTwo">
+                  <input id="inputTwo" type="text" placeholder="Result ..." class="inputField" disabled>
+                  <select id="selectTwo" class="selector">
+                     <option selected disabled value="option">Select</option>
+                     <option value="km">Kilometer</option>
+                     <option value="m">Metere</option>
+                     <option value="dm">Decimeter</option>
+                     <option value="cm">Centimeter</option>
+                     <option value="mm">Millimeter</option>
+                  </select>
+               </div>
+            </div>
+<!-- ПЕРЕДЕЛАТЬ button -->
+         <!-- <button class="exitBtn"><a href="/timer.html">EXIT</a></button> -->
+         <a href="/calcConvert.html"><button class="exitBtn">exit</button></a>
+      </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="index.js"></script>
+</body>
+</html>
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+<!-- ссылка для sweet alert -->

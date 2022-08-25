@@ -1,0 +1,1400 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400;1,700&display=swap');
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+position: relative;
+width: 100%;
+height: 100%;
+font-family: 'Merriweather', serif;
+background-color: #102436;
+color: #ffffff;
+z-index: 10;
+overflow-x: hidden;
+opacity: 0;
+padding: 0px 15px; 
+}
+
+/* -----------------------Navbar------------------------------*/
+.navbar {
+display: flex;
+justify-content: flex-end;
+width: 100%;
+height: 8vh;
+z-index: 10;
+}
+
+.navLink {
+font-family: 'Merriweather', serif;
+font-size: 20px;
+text-transform: uppercase;
+text-decoration: none;
+color: #ffffff;
+margin: 20px;
+padding: 10px;
+}
+
+.navLink:hover {
+cursor: pointer;
+}
+
+/* ------------------------Header------------------------------*/
+header {
+position: relative;
+width: 100%;
+padding: 45px 0px;
+text-align: center;
+}
+
+header h1,
+header h3 {
+font-size: 50px;
+font-weight: 500;
+letter-spacing: 5px;
+color: #ffffff;
+text-transform: uppercase;
+}
+
+header h3 {
+font-size: 30px;
+font-weight: 400;
+}
+
+/* -------------------------Section-----------------------------*/
+section {
+position: relative;
+width: 100%;
+padding: 250px 0px;
+background-size: cover !important;
+background-attachment: fixed !important;
+overflow: hidden;
+box-shadow: 3px 3px 11px rgba(238, 57, 57, 0.5);
+}
+
+section::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(81, 80, 80, 0.2);
+}
+
+.sectionPhoto {
+background-image: url(https://cdn.glitch.global/b8defa2d-4490-42d6-b31d-00ba52aab25b/HAPPY.jpeg?v=1655286315803);
+filter: opacity(.25);
+}
+
+section h2 {
+position: absolute;
+font-size: 90px;
+letter-spacing: 10px;
+font-weight: 300;
+text-transform: uppercase;
+top: 100px;
+left: 50px;
+z-index: 10;
+color: #ffffff;
+text-shadow: 0 1px 0 rgb(29, 29, 29),
+2px 2px 0 rgb(32, 32, 32),
+2px 3px 0 rgb(32, 32, 32),
+0 4px 0 rgb(32, 32, 32),
+0 5px 0 rgb(32, 32, 32),
+0 6px 1px rgba(0,0,0,.1),
+0 0 5px rgba(0,0,0,.1),
+0 1px 3px rgba(0,0,0,.3),
+0 3px 5px rgba(0,0,0,.2),
+0 5px 10px rgba(0,0,0,.25),
+0 10px 10px rgba(0,0,0,.2),
+0 20px 20px rgba(0,0,0,.15);
+}
+
+/*-----------Three Pages ( About Me + Projects + Contact Me )--------*/
+/* -------------------SECOND PAGE------------------------------ */
+/* -------------------About Me--------------------------------- */
+.titleContainer {
+display: flex;
+justify-content: center;
+height: 130px;
+margin-top: 50px;
+}
+
+.middleProjectContainer {
+position: relative;
+display: flex;
+justify-content: center;
+width: 250px;
+transform: translate(-100px, 0px);
+opacity: 0;
+transition: all 0.4s ease .1s;
+}
+
+.middleProjectContainer::after {
+content: "";
+position: absolute;
+height: 50px;
+width: 100%;
+border: 3px solid transparent;
+border-top-color: #ffffff;
+top: 70px;
+left: 0%;
+border-radius: 50%;
+transform: rotate(5deg);
+}
+.title {
+font-family: 'Merriweather', serif;
+font-size: 30px;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 1px;
+text-transform: uppercase;
+transform: rotate(5deg);
+color: #ffffff;
+padding-top: 20px;
+}
+
+/*---------------------Container Second Page (SP)---------------*/
+/* --------------------Container Left Side----------------------*/
+.secondPage {
+min-height: 100vh;
+width: 100%;
+background-color: #ef5658;
+background-image: linear-gradient(rgba(233, 200, 200, 0.3), rgba(0, 0, 0, 0.8));
+}
+
+.containerSP {
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+width: 80%;
+height: 70vh;
+margin: 0 auto;
+}
+
+.portraitContainer {
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 40%;
+margin-top: 30px;
+transform: translate(-100%, 0px);
+opacity: 0;
+transition: all .7s ease 0.1s;
+}
+
+.portrait {
+width: 52%;
+height: 300px;
+margin-top: 100px;
+border-radius: 7% !important;
+box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.9);
+} 
+.whoIsShe {
+position: absolute;
+top: 30px;
+font-family: 'Merriweather', serif;
+text-align: justify;
+font-size: 20px;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 1px;
+}
+
+.roller {
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+top: 400px;
+height: 70px;
+width: 425px;
+line-height: 60px;
+margin: 10px 25px;
+padding: 10px;
+overflow: hidden;
+}
+
+@keyframes slide {
+0% {
+top: 0;
+}
+25% {
+top: -4rem;
+}
+50% {
+top: -8rem;
+}
+}
+
+.rolltext {
+position: absolute;
+font-family: 'Merriweather', serif;
+text-align: justify;
+font-size: 15px;
+font-weight: 100;
+width: 90%;
+padding: 5px 7px;
+top: 0px;
+animation: slide 13s infinite;
+}
+
+.rolltextLink {
+font-size: 20px;
+color: #ef5658;
+}
+
+.move {
+position: absolute;
+left: 110px;
+letter-spacing: 1px;
+}
+
+.mobile
+{
+display: none;
+}
+
+/*----------------------Container Right Side-------------------*/
+.containerTog {
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 40%;
+margin-top: 30px;
+}
+
+.skillContainer { 
+position: absolute;
+display: flex;
+width: 70%;
+flex-direction: column;
+top: 30px;
+padding: 10px;
+}
+
+.parAboutMe {
+font-family: 'Merriweather', serif;
+text-align: justify;
+font-size: 17px;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 1px;
+}
+
+.firstLetter {
+float: left;
+font-size: 90px;
+font-weight: 400;
+line-height: 60px;
+padding-top: 10px;
+padding-right: 10px;
+padding-left: 10px;
+}
+
+.skillContainerExtra {
+position: absolute;
+display: flex;
+flex-direction: column;
+top: 150px;
+padding: 20px;
+}
+
+.skills {
+font-family: 'Merriweather', serif;
+font-size: 20px;
+letter-spacing: 1px;
+line-height: 25px;
+list-style: none;
+}
+
+.skillItem {
+font-size: 35px;
+width: 70px;
+display: inline-block;
+}
+
+.itemOne {
+transform: translate(10px, 0px);
+opacity: 0;
+transition: all 0.2s ease .1s;
+}
+
+.itemTwo {
+transform: translate(10px, 0px);
+opacity: 0;
+transition: all 0.2s ease .2s;
+} 
+
+.itemThree {
+transform: translate(10px, 0px);
+opacity: 0;
+transition: all 0.2s ease .3s;
+}
+
+.itemFour {
+transform: translate(10px, 0px);
+opacity: 0;
+transition: all 0.2s ease .4s;
+}
+
+.itemFive {
+transform: translate(10px, 0px);
+opacity: 0;
+transition: all 0.2s ease .5s;
+}
+
+.itemSix {
+transform: translate(10px, 0px);
+opacity: 0;
+transition: all 0.2s ease .6s;
+}
+
+.itemSeven {
+transform: translate(10px, 0px);
+opacity: 0;
+transition: all 0.2s ease .7s;
+}
+
+.itemEight {
+transform: translate(10px, 0px);
+opacity: 0;
+transition: all 0.2s ease .8s;
+}
+
+/*----------------------CV Button-----------------------------*/
+.cvBtn {
+font-family: 'Merriweather', serif;
+font-size: 17px;
+letter-spacing: 1px;
+font-weight: 400;
+padding: 10px 20px;
+margin: 50px auto;
+border-radius: 10px;
+border: none;
+width: 230px;
+background-color: #ef5658;
+color: #ffffff;
+opacity: 0;
+scale: 0;
+transition: all 0.3s ease 1s;
+}
+
+.cvBtn:hover {
+cursor: pointer;
+}
+
+/*----------------------My CV ( Background )------------------*/
+.cv {
+display: none;
+position: absolute;
+z-index: 1;
+padding-top: 50px;
+padding-bottom: 50px;
+left: 0;
+top: 680px;
+width: 100%;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cvContent {
+background-color: #ffffff;
+margin: auto;
+padding: 30px 20px 40px 30px;
+width: 80%;
+height: 100%;
+}
+
+.mainCVContainer {
+display: flex;
+justify-content: center;
+overflow: auto;
+width: 100%;
+height: 90%;
+}
+
+.leftSideContainer {
+display: flex;
+flex-direction: column;
+width: 70%;
+height: 100%;
+padding: 20px;
+}
+.rightSideContainer {
+display: flex;
+flex-direction: column;
+width: 30%;
+height: 170%;
+padding: 20px;
+background-color: #ef5658;
+background-image: linear-gradient(rgba(233, 200, 200, 0.3), rgba(0, 0, 0, 0.6));
+font-family: 'Merriweather', serif;
+}
+.cvName {
+font-family: 'Merriweather', serif;
+font-size: 50px;
+font-weight: 700;
+color: #102436;
+letter-spacing: 1px;
+}
+.cvProfession {
+font-family: 'Merriweather', serif;
+font-size: 25px;
+font-weight: 400;
+font-style: italic;
+color: #102436;
+letter-spacing: 5px;
+}
+.cvInfo {
+font-family: 'Merriweather', serif;
+display: flex;
+flex-direction: column;
+margin-top: 20px;
+padding-right: 10px;
+}
+h4 {
+color: #102436;
+font-size: 18px;
+font-weight: 400;
+margin: 20px 0px;
+letter-spacing: 1.5px;
+word-spacing: 3px;
+}
+.cvPar {
+font-size: 15px;
+font-weight: 400;
+color: #102436;
+line-height: 30px;
+letter-spacing: 1.5px;
+margin-left: 20px;
+}
+.cvJobPosition {
+font-size: 17px;
+font-weight: 700;
+font-style: italic;
+color: #ef5658;
+}
+.cvResponsibilities {
+font-weight: 300;
+font-size: 15px;
+letter-spacing: 1px;
+font-style: italic;
+color: #102436;
+margin-top: 10px;
+}
+.cvList {
+font-size: 15px;
+font-weight: 400;
+color: #102436;
+line-height: 20px;
+letter-spacing: 1.5px;
+margin-left: 40px;
+margin-top: 10px;
+}
+.cvContactContainer,
+.cvSkillsContainer,
+.cvLanguageContainer {
+display: flex;
+flex-direction: column;
+width: 100%;
+margin-bottom: 20px;
+}
+.cvHeader {
+font-size: 17px;
+font-style: italic;
+font-weight: 700;
+color: #102436;
+padding: 15px 0px 8px 0px;
+word-spacing: 3px;
+}
+.cvAddress {
+font-size: 15px;
+letter-spacing: 1px;
+font-weight: 400;
+color: #102436;
+}
+.cvEmail {
+font-size: 15px;
+}
+.emailLink {
+color: rgba(255, 255, 255, 0.781);
+}
+.emailLink:hover {
+color: #0e2884;
+}
+.cvFrameworks {
+font-size: 15px;
+letter-spacing: 1.5px;
+font-weight: 400;
+color: #102436;
+text-decoration: underline;
+margin-top: 5px;
+}
+.cvClose {
+color: #000000;
+float: right;
+font-size: 30px;
+font-weight: bold;
+}
+.cvClose:hover {
+color: #ef5658;
+text-decoration: none;
+cursor: pointer;
+}
+/*---------------------Triangle About Me--------------------*/
+.triangleAboutMe {
+position: relative;
+display: flex;
+justify-content: center;
+height: 70px;
+width: 100%;
+margin-top: 60px;
+}
+.triangleAboutMe::before,
+.triangleAboutMe::after {
+content: "";
+height: 100%;
+width: 50%;
+position: absolute;
+bottom: -30px;
+background-color: #102436;
+}
+.triangleAboutMe::before {
+left: 0px;
+transform: skew(0deg, 5deg);
+}
+.triangleAboutMe::after {
+right: 0;
+transform: skew(0deg, -5deg);
+}
+/*-----------------------Third Page / Cards-------------------*/
+/*-----------------------Projects-----------------------------*/ 
+/*-----------------------Cards Container----------------------*/
+.cardContainer {
+display: flex;
+flex-direction: column;
+align-items: center;
+min-height: 100vh;
+}
+.cardContainerExtra {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 0px;
+z-index: 1;
+opacity: 0;
+transition: all .6s ease-in .3s;
+}
+.col {
+width: 300px;
+margin: 30px;
+z-index: -1;
+height: auto;
+}
+.containerAnimation {
+-webkit-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
+.front,
+.back {
+border-radius: 10px;
+min-height: 300px;
+-webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+-o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+/* Hid the backface visibility */
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+text-align: center;
+}
+.back {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);    /* если убрать эти команды, то фронтальный контейнер разделится, а боковой контейнер разделится и станет по высоте как сумма фронтального и заднего контейнера */
+}
+.frontCoverOne {
+background-image: url(https://cdn.glitch.global/b8defa2d-4490-42d6-b31d-00ba52aab25b/Weather.jpeg?v=1655286305733);
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.frontCoverTwo {
+background-image: url(https://cdn.glitch.global/b8defa2d-4490-42d6-b31d-00ba52aab25b/GameQuizQuotes.jpeg?v=1655286402276);
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.frontCoverThree {
+background-image: url(https://cdn.glitch.global/b8defa2d-4490-42d6-b31d-00ba52aab25b/Calculator.jpeg?v=1655286413596);
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.frontCoverFour {
+background-image: url(https://cdn.glitch.global/b8defa2d-4490-42d6-b31d-00ba52aab25b/Timer.jpeg?v=1655286346948);
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.frontCoverFive {
+background-image: url(https://cdn.glitch.global/b8defa2d-4490-42d6-b31d-00ba52aab25b/photo-1.jpeg?v=1655287078603);
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.containerAnimation .back {
+/* Preparing the animation */
+-webkit-transform: rotateY(180deg);
+transform: rotateY(180deg); 
+-webkit-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
+.containerAnimation .front {
+/* Preparing the animation */
+-webkit-transform: rotateY(0deg);
+transform: rotateY(0deg);
+-webkit-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
+.containerAnimation:hover .back {
+/* Preparing the animation */
+-webkit-transform: rotateY(0deg);
+transform: rotateY(0deg);
+-webkit-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
+.containerAnimation:hover .front {
+/* Preparing the animation */
+-webkit-transform: rotateY(-180deg);
+transform: rotateY(-180deg);
+-webkit-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
+
+
+/*  */
+
+/*--------------------ОФОРМЛЯЕМ текст---------------------*/
+.inner {
+font-family: 'Merriweather', serif;
+-webkit-transform: translateY(-50%) translateZ(60px) scale(0.9);
+position: absolute;
+top: 50%;
+width: 100%;
+padding: 10px;
+display: flex;
+flex-direction: column; 
+align-items: center; 
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+outline: 1px solid transparent;
+-webkit-perspective: inherit;
+perspective: inherit;
+}
+.parFront {
+position: absolute;
+font-family: 'Merriweather', serif;
+font-size: 25px;
+color: #102436;
+border-radius: 10px;
+top: -80px;
+padding: 50px 30px;
+width: 60%; 
+background-color: #ffffff;
+filter: opacity(.7);
+}
+.parBack {
+font-size: 20px;
+letter-spacing: 2px;
+padding: 10px 20px;
+color: #ffffff;
+}
+.cardBtn {
+font-family: 'Merriweather', serif;
+font-size: 20px;
+letter-spacing: 1px;
+padding: 8px 30px;
+border: 2px solid #ffffff;
+border-radius: 10px;
+background-color: transparent;
+color: #ffffff;
+}
+.cardBtn:hover {
+background-color: #ef5658;
+border: none;
+cursor: pointer;
+}
+/*---------------------Fourth Page---------------------------*/
+/*---------------------Contact Me----------------------------*/
+.fourthPage {
+min-height: 90vh;
+width: 100%;
+background-color: #ef5658;
+background-image: linear-gradient(rgba(233, 200, 200, 0.3), rgba(0, 0, 0, 0.6));
+}
+/*--------------------Triangle----------------------------*/
+.triangle {
+position: relative;
+display: flex;
+justify-content: center;
+height: 90px;
+width: 100%;
+}
+.triangle::before,
+.triangle::after {
+content: "";
+height: 100%;
+width: 50%;
+position: absolute;
+top: 25px;
+background-color: #102436;
+}
+.triangle::before {
+left: 0px;
+transform: skew(0deg, 5deg);
+}
+.triangle::after {
+right: 0;
+transform: skew(0deg, -5deg);
+}
+/*-----------------------Form----------------------------*/
+.formContainer {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+height: 40vh;
+margin-top: 15px;
+padding: 0px 0px 20% 0px;
+}
+.formHeader {
+font-family: 'Merriweather', serif;
+margin-bottom: 10px;
+font-size: 25px;
+font-weight: 400;
+letter-spacing: 1px;
+transform: translate(100px, 0px);
+opacity: 0;
+transition: all 0.5s ease .5s;
+}
+.form {
+display: flex;
+flex-direction: column;
+align-items: center;
+opacity: 0;
+scale: 0;
+transition: all 0.5s ease .7s;
+}
+#text,
+#email,
+#message {
+font-family: 'Merriweather', serif;
+width: 400px;
+margin: 3px;
+padding: 10px;
+font-size: 15px;
+font-weight: 300;
+letter-spacing: 1px;
+color: #ffffff;
+background-color: #102436;
+border: none;
+}
+#text,
+#email {
+height: 35px;
+}
+#message {
+height: 120px;
+}
+.contactBtn {
+align-self: flex-end;
+font-size: 15px;
+font-weight: 300;
+letter-spacing: 2px;
+color: #ffffff;
+text-transform: uppercase;
+font-family: 'Merriweather', serif;
+padding: 10px 25px;
+margin-top: 5px;
+border-radius: 12px;
+border: none;
+background-color: #ef5658;
+}
+.contactBtn:hover {
+cursor: pointer;
+}
+/*-----------------------sayHi----------------------------*/
+.parContainer {
+display: flex;
+justify-content: center;
+}
+.parContainerInside {
+display: flex;
+flex-direction: column;
+width: 300px;
+height: 140px;
+padding: 10px 25px 10px;
+}
+.sayHi {
+font-family: 'Merriweather', serif;
+letter-spacing: 1px;
+font-size: 55px;
+margin-left: 20px;
+}
+.shy {
+font-family: 'Merriweather', serif;
+letter-spacing: 1.5px;
+font-size: 30px;
+}
+.reflect {
+color: #ef5658;
+text-shadow: 3px 3px #000000;
+}
+/*-------------------Footer----------------------------*/
+.footer {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+height: 30vh;
+}
+/*-------------------Scroll Arrow---------------------- */
+.backToTop:hover {
+cursor: pointer;
+}
+.scrollContainer {
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+.scrollCircle {
+width: 70px;
+height: 70px;
+background-color: #ef5658;
+border-radius: 50%;
+padding: 20px;
+position: absolute;
+display: block;
+z-index: 10;
+-webkit-animation: move 3s linear 3s infinite;
+animation: move 3s linear 3s infinite;
+}
+@-webkit-keyframes move {
+15% {
+transform: translateY(2px);
+}
+30% {
+transform: translateY(-2px);
+}
+45% {
+transform: translateY(2px);
+}
+60% {
+transform: translateY(-2px);
+}
+75% {
+transform: translateY(2px);
+}
+90% {
+transform: translateY(-2px);
+}
+100% {
+transform: translateY(0px);
+}
+}
+@keyframes move {
+15% {
+transform: translateY(2px);
+}
+30% {
+transform: translateY(-2px);
+}
+45% {
+transform: translateY(2px);
+}
+60% {
+transform: translateY(-2px);
+}
+75% {
+transform: translateY(2px);
+}
+90% {
+transform: translateY(-2px);
+}
+100% {
+transform: translateY(0px);
+}
+}
+/*-----------------------СОЗДАЕМ БЕЛУЮ СТРЕЛОЧКУ-------------*/
+.scrollTriangle {
+position: relative;
+border: 20px solid transparent;
+border-bottom: 20px solid #ffffff;
+width: 0;
+height: 0;
+left: 15px;
+top: 0px;
+z-index: 10;
+-webkit-animation: move 3s linear 3s infinite;
+animation: move 3s linear 3s infinite;
+} 
+.scrollTriangle::after {
+content: '';
+position: absolute;
+border: 20px solid transparent;
+border-bottom: 20px solid #ef5658;
+width: 0;
+height: 0;
+top: -13px;
+left: -20px;
+}
+/*----------------------Icons----------------------------------*/
+.socialIconsContainer {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+width: 20%;
+margin-top: 50px;
+margin-left: 30px;
+}
+.icon {
+background-color: #ffffff;
+padding: 5px;
+border-radius: 5px;
+}
+.icon:hover {
+cursor: pointer;
+}
+.ps {
+font-family: 'Merriweather', serif;
+font-size: 13px;
+letter-spacing: 1px;
+font-weight: 300;
+color: rgba(255, 255, 255, 0.3);
+text-align: center;
+padding: 10px 15px 20px 15px;
+} 
+.year {
+color: #ef5658;
+font-size: 13px;
+letter-spacing: 1px;
+} 
+/*-----------------------loop-----------------------------*/
+.loop {
+position: fixed;
+bottom: 60px;
+right: 60px;
+}
+.loop::before {
+content: "";
+position: absolute;
+top: 155px;
+left: 13px;
+width: 100px;
+height: 32px;
+border-radius: 100%;
+background-color: #ef5658;
+filter: opacity(.7);
+}
+.loop::before {
+-webkit-animation-name: shadowLoop;
+animation-name: shadowLoop;
+-webkit-animation-duration: 0.7s;
+animation-duration: 0.7s;
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease;
+animation-timing-function: ease;
+-webkit-animation-direction: alternate;
+animation-direction: alternate;
+}
+@keyframes shadowLoop {
+0% {
+-webkit-transform: translate(0, -35px) scale(1.15, 0.25);
+transform: translate(0, -35px) scale(1.15, 0.25);
+}
+100% {
+-webkit-transform: translate(0, -35px) scale(1, 0.25);
+transform: translate(0, -35px) scale(1, 0.25);
+}
+}
+.center {
+-webkit-animation-name: cloudLoop;
+animation-name: cloudLoop;
+-webkit-animation-duration: 0.7s;
+animation-duration: 0.7s;
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+-webkit-animation-direction: alternate;
+animation-direction: alternate;
+display: flex;
+-webkit-box-align: space-evenly;
+-ms-flex-align: space-evenly; 
+justify-content: space-evenly;
+width: 120px;
+height: 120px;
+border-radius: 100%;
+background-color: #ef5658;
+filter: opacity(.7);
+border: 3px solid #000000;
+overflow: hidden;
+}
+@keyframes cloudLoop {
+0% {
+-webkit-transform: translate(0, 15px);
+transform: translate(0, 15px);
+}
+100% {
+-webkit-transform: translate(0, 0);
+transform: translate(0, 0);
+}
+}
+.box {
+display: flex;
+-webkit-box-align: space-evenly;
+-ms-flex-align: space-evenly; 
+justify-content: space-evenly;
+-webkit-animation: .6s speedOne linear infinite normal;
+animation: .6s speedOne linear infinite normal;
+}
+@keyframes speedOne {
+0% {
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+100% {
+-webkit-transform: translate3d(50%, 0, 0);
+transform: translate3d(50%, 0, 0);
+}
+}
+.emoji {
+height: 80px;
+width: 70px;
+margin: 15px;
+}
+.active {
+transform: translate(0px, 0px);
+opacity: 1;
+scale: 1;
+}
+
+
+
+@media all and (max-width: 500px) {
+.navLink {
+font-size: 11px;
+margin-right: 10px;
+}
+header h1
+{
+font-size: 23px;
+}
+header h3 {
+font-size: 14px;
+}
+section {
+/* padding: 95px 0px;
+background-size: 380px 195px !important;
+background-attachment: fixed !important;
+background-repeat: no-repeat;
+background-position: center; */
+background-image: url(https://cdn.glitch.global/b8defa2d-4490-42d6-b31d-00ba52aab25b/HAPPY.jpeg?v=1655286315803) center !important;
+}
+section h2 {
+font-size: 11px;
+left: 5px;
+}
+.titleContainer {
+height: 90px;
+margin-top: 30px;
+}
+.middleProjectContainer::after {
+width: 70%;
+left: 15%;
+}
+.secondPage {
+min-height: 85vh;
+}
+.containerSP {
+width: 90%;
+height: 75vh;    
+}
+.title {
+font-size: 23px;
+}
+.whoIsShe {
+top: 50px;
+font-size: 15px;
+}
+.portrait {
+width: 75%;
+height: 170px;
+margin-left: -35px;
+} 
+.skillContainer {
+width: 100%;
+}
+.parAboutMe {
+font-size: 8.3px;
+line-height: 2.3;
+letter-spacing: 0;
+margin-left: -30px;
+}
+.firstLetter {
+font-size: 70px;
+padding-top: 0px;
+padding-right: 8px;
+padding-left: 0px;
+}
+.skillContainerExtra {
+top: 130px;
+padding: 25px 10px;
+}
+.skills {
+margin-left: 5px;
+font-size: 11px;
+letter-spacing: .7px;
+line-height: 25px;
+}
+.skillItem {
+font-size: 20px;
+width: 28px;
+}
+.mobile
+{
+display: block;
+}
+.textMobile {
+font-family: 'Merriweather', serif;
+font-size: 10px;
+letter-spacing: .7px;
+line-height: 2;
+margin-top: 15px;
+margin-left: -17px;
+}
+.textColorMobile {
+color: #ef5658;
+font-size: 13px;
+letter-spacing: .3px;
+line-height: 1.3;
+}
+.roller {
+display: none;
+}
+.cvBtn {
+font-size: 11px;
+width: 125px;
+margin-top: 27px;
+padding: 3px 5px;
+}
+.leftSideContainer {
+width: 60%;
+}
+.rightSideContainer {
+width: 40%;
+height: 140%;
+padding: 10px;
+}
+.mainCVContainer {
+height: 70%;
+}
+.cvName {
+font-size: 18px;
+}
+.cvProfession {
+font-size: 10px;
+letter-spacing: 0px;
+}
+h4 {
+font-size: 11px;
+margin: 10px 0px;
+letter-spacing: .5px;
+}
+.cvPar {
+font-size: 9px;
+line-height: 15px;
+letter-spacing: .5px;
+margin-left: 1px;
+}
+.cvHeader {
+font-size: 10px;
+}
+.cvAddress {
+font-size: 9px;
+}
+.cvEmail {
+font-size: 12px;    
+}
+.cvFrameworks {
+font-size: 10px;
+} 
+
+
+.fourthPage {
+height: 80vh;
+}
+.formHeader {
+font-size: 22px;
+}
+.formContainer {
+margin: auto;
+margin-top: 45px;
+width: 80%;
+height: 35vh;
+padding: 0px 0px 7% 0px;
+}
+#text,
+#email,
+#message {
+font-size: 13px;
+width: 280px;
+}
+#message {
+height: 100px;
+}
+.contactBtn {
+align-self: center;
+font-size: 13px;
+padding: 10px 15px;
+margin-top: 10px;
+}
+.sayHi {
+font-size: 35px;
+margin-top: 55px;
+margin: auto;
+}
+.shy {
+font-size: 19px;
+margin: auto;
+}
+.socialIconsContainer {
+width: 70%;
+margin-top: 55px;
+padding: 5px 5px 40px 5px;
+}
+.center {
+width: 80px;
+height: 80px;
+}
+.emoji {
+height: 50px;
+width: 40px;
+}
+.loop::before {
+top: 120px;
+left: 0px;
+width: 80px;
+}
+.ps {
+font-size: 9px;
+} 
+.scrollCircle {
+width: 50px;
+height: 50px;
+}
+.scrollTriangle {
+left: 6px;
+top: -9px;
+}
+}
+
+
+
+@media all and (max-width: 400px) {
+.navLink {
+font-size: 9px;
+margin-right: 20px;
+}
+header h1 {
+font-size: 19px;
+}
+header h3 {
+font-size: 12px;
+margin-top: -20px;
+}
+section {
+padding: 85px 0px;
+background-size: 370px 160px !important;
+}
+section h2 {
+font-size: 9px;
+left: 7px;
+margin-top: -30px;
+}
+.titleContainer {
+height: 50px;
+margin-top: 10px;
+}
+.secondPage {
+min-height: 97vh;
+}
+.cardContainer {
+margin-top: 80px;
+}
+.title {
+font-size: 19px;
+}
+.skills {
+font-size: 9px;
+}
+.skillItem {
+font-size: 19px;
+}
+.mobile {
+display: block;
+}
+.textMobile {
+margin-left: -13px;
+}
+.cvBtn {
+margin-top: 40px;
+}
+.rightSideContainer {
+height: 135%;
+}
+.mainCVContainer {
+height: 90%;         
+}
+.fourthPage {
+height: 90vh;
+}
+.formHeader {
+font-size: 20px;
+}
+.contactBtn {
+margin-top: 30px;
+}
+.sayHi {
+margin-top: 85px;
+}
+.shy {
+margin-top: 15px;
+}
+.socialIconsContainer {
+margin-top: 25px;
+padding: 5px 5px 50px 5px;
+}
+.triangle {
+height: 60px;
+margin-bottom: 20px;
+}
+.triangleAboutMe {
+margin-top: 25px;
+height: 60px;
+}
+.fourthPage {
+min-height: 100vh;
+}
+}
+

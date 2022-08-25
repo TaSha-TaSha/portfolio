@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia Krainova Portfolio | Routine App | Exercise</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="exercise.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <video id="video" loop="loop" muted defaultMuted playsinline controls>
+            <!--  autoplay="autoplay" мы здесь убрали, соответственно играет при нажатие на кнопку, а не автоматически -->
+            <source src="https://cdn.glitch.me/c6c0e306-383c-4d68-b421-16ec50b94a48/sport.mp4?v=1649436295094" type="video/mp4">
+        </video>    
+        <audio id="audio" loop="loop">
+            <!--  autoplay="autoplay" мы здесь убрали, соответственно играет при нажатие на кнопку, а не автоматически -->
+            <source src="https://cdn.glitch.global/c6c0e306-383c-4d68-b421-16ec50b94a48/sport.mp3?v=1649436221160" type="audio/mp3">
+        </audio>
+        <div class="timerContainer">
+            <h1 class="timeHeader">00:00</h1>
+            <button id="startBtn">Start</button>
+            <button id="backBtn"><a href="/NK Routine/index.html">Go Back</a></button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EaselPlugin.min.js"></script>
+    <script src="exercise.js"></script>
+</body>
+</html>
+
+
