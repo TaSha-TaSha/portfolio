@@ -61,8 +61,6 @@ function zambiaLeft(){
     buttonRight.textContent = 'RIGHT';
 
     exit.style.display = 'none';
-
-    // console.log(zambiaLeft);
 }
 
 function southAfricaLeft(){
@@ -81,8 +79,6 @@ function southAfricaLeft(){
 
     buttonLeft.addEventListener('click', together);
     buttonRight.addEventListener('click', together);
-
-    // console.log(southAfricaLeft);
 }
 
 function namibiaRight(){
@@ -101,8 +97,6 @@ function namibiaRight(){
 
     buttonLeft.addEventListener('click', together);
     buttonRight.addEventListener('click', together);
-
-    // console.log(namibiaRight);
 }
 
 // -----------------   ВТОРАЯ КНОПКА----------------------------//
@@ -133,7 +127,6 @@ function tanzaniaRight(){
     buttonRight.addEventListener('click', kenyaRight);
 
     exit.style.display = 'none';
-    // console.log(tanzaniaRight);
 }
 
 function madagascarLeft(){
@@ -152,8 +145,6 @@ function madagascarLeft(){
 
     buttonLeft.addEventListener('click', together);
     buttonRight.addEventListener('click', together);
-
-    // console.log(madagascarLeft);
 }
 
 function kenyaRight(){
@@ -172,8 +163,6 @@ function kenyaRight(){
 
     buttonLeft.addEventListener('click', together);
     buttonRight.addEventListener('click', together);
-
-    // console.log(kenyaRight);
 }
 
 //------------------------ ВСЕ ВМЕСТЕ ------------------------//
@@ -196,15 +185,7 @@ function together(){
     buttonRight.style = 'display: none';
 
     exit.style.display = 'block';
-
-    // console.log(together);
 }
-
-// exitBtn.addEventListener('click', () => {
-//     setTimeout(function() {
-//         document.location.assign('/NK Routine/index.html')
-//     }, 900);
-// });
 
 // Animation on load
 gsap.from('header', {opacity: 0, scale: .3, duration: .3, delay: .7})
@@ -222,46 +203,5 @@ gsap.from('.exitBtn', {y: 30,  opacity: 0, duration: .7, delay: 2})
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ПЕРВЫЙ ВАРИАНТ
-// const button = document.querySelector('#btn');
-// const show = document.querySelector('#show');
-
-// button.addEventListener('click', () => {
-//     let quotesArray = [
-//         '«Traveling – it leaves you speechless, then turns you into a storyteller.», - Ibn Battuta',
-//         '«We travel, some of us forever, to seek other places, other lives, other souls.», - Anais Nin',
-//         '«A journey is best measured in friends, rather than miles.», - Tim Cahill',
-//         '«The gladdest moment in human life, methinks, is a departure into unknown lands.», - Sir Richard Burton',
-//         '«No place is ever as bad as they tell you it is going to be.», - Chuck Thompson',
-//         '«I am not the same, having seen the moon shine on the other side of the world.», - Mary Anne Radmacher',
-//         '«Travel makes one modest. You see what a tiny place you occupy in the world.», - Gustave Flaubert.'
-//     ];
-    
-//     let quoteRandom = quotesArray[Math.floor(Math.random() * quotesArray.length)];
-//     show.style.display = 'block';
-//     show.textContent = quoteRandom;
-// })
 
 
