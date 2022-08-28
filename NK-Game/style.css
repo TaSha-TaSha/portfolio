@@ -10,7 +10,6 @@
 
 body {
     background-color: #B8F1B0;
-    /* min-height: 100vh; */
 }
 
 .containerOne {
@@ -18,8 +17,6 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 99vh;
-    /* justify-content: center; */
-    /* border: red 3px solid; */
 }
 
 .mouse {
@@ -27,7 +24,6 @@ body {
     height: 310px;
     border-radius: 7px;
     margin-top: 2%;
-    /* border: 11px outset; */
 }
 
 .btnContainer {
@@ -36,7 +32,6 @@ body {
     width: 40%;
     margin-top: 3%;
     opacity: 0;
-    /* border:  red 3px solid; */
 }
 
 .toShow {
@@ -74,7 +69,6 @@ body {
 .containerTwoMain {
     display: flex;
     justify-content: center;
-    /* border: blue 3px solid; */
 }
 
 .containerTwo {
@@ -124,7 +118,6 @@ header h1 {
     align-items: center;
     padding: 20px;
     width: 80%;
-    /* border: black 3px solid; */
     margin: auto;
 }
 
@@ -142,12 +135,6 @@ h2 {
     font-weight: 300;
     color: #293462;
 }
-
-/* .attempt {
-    font-family: 'Merriweather', serif;
-    font-size: 25px;
-    color: #293462;
-} */
 
 .attemptNumber {
     font-family: 'Merriweather', serif;
@@ -188,14 +175,12 @@ h3 {
     margin-top: 7%;
 }
 
-
 .btnContainerDown {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 70%;
     padding: 7px;
-    /* border: blue 3px solid; */
 }
 
 .enterBtn,
@@ -231,13 +216,6 @@ a {
 
 
 /* Mobile Adaptation */
-/* @media all and (max-width: 900px) {
-
-} */
-
-/* @media all and (max-width: 800px) {
-} */
-
 @media all and (max-width: 600px) {
     .btn {
         font-size: 25px;
@@ -313,12 +291,6 @@ a {
         margin: 10px;
     }
 
-    /* .containerTwo {
-        padding: 30px;
-        width: 80%;
-    }
- */
-
     header h1 {
         font-size: 23px;
         margin-left: 43px;
@@ -360,23 +332,12 @@ a {
     .exitBtn
     {
     font-size: 13px;
-    /* width: 110px; */
     }
 
     .gameContainer {
         width: 100%;
     }
-    
-
-
-
 }
-
-@media all and (max-width: 400px) {
-}
-
-
-
 
 
 
