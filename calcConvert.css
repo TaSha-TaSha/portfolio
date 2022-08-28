@@ -24,7 +24,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: red 3px solid;
 }
 
 @keyframes gradientB {
@@ -43,7 +42,6 @@ body {
     margin-top: .5%;
     width: 100%;
     min-height: 87vh;
-    border: blue 3px solid;
 }
 
 .insideContainer {
@@ -52,7 +50,6 @@ body {
     flex-wrap: wrap;
     max-height: 90vh;
     width: 100%;
-    border: red 3px solid;
 }
 
 header {
