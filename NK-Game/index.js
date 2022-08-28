@@ -102,7 +102,7 @@ if (number > 5) {
     play.style.display = 'block';
 }
 
-else if (number === 5) {  //здесь означает, что пятая попытка и вместо цифры 5 мы просто пишем last (последняя попытка)
+else if (number === 5) {
     attemptNumber.textContent = '';
     document.querySelector('#lastAttempt').textContent = 'last';
 }
