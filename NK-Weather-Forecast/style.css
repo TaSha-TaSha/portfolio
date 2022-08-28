@@ -22,7 +22,6 @@ body {
 #headerInput {
     display: flex;
     justify-content: center;
-    /* border: red 3px solid; */
 }
 
 #whereWhen {
@@ -44,7 +43,6 @@ body {
 #lastContainer {
     display: flex;
     justify-content: center;
-    /* border: red 3px solid; */
 }
 
 h1 {
@@ -52,7 +50,6 @@ h1 {
     font-size: 70px;
     text-shadow: 1px 1px #F0A500;
     font-style: italic;
-    /* border: red 3px solid */
 }
 
 #input {
@@ -117,7 +114,6 @@ p {
     100% {background-position: 80%, 0%;}
 }
 
-/* добавила */
 #icon {
     display: none;
 }
@@ -128,13 +124,10 @@ p {
     margin: 10px;
     display: none;
 }
-/*  */
-
 
 
 
 @media all and (max-width: 800px){
-    /* добавила */
     body {
         height: 150vh;
     }
@@ -160,6 +153,5 @@ p {
 
     .backBtn {
         font-size: 11px;
-        /* padding: 7px 20px; */
     }
 }
