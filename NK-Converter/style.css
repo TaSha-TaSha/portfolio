@@ -18,22 +18,17 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* opacity: 0; */
 }
 
 .mainContainer {
-    /* display: none; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: red 3px solid; */
 }
 
 .header {
     display: flex;
     justify-content: center;
-    /* border: red 3px solid; */
 }
 
 h1 {
@@ -50,35 +45,30 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* align-items нужен здесь!!!!!! */
     height: 50vh;
     width: 500px;
     margin: 10% auto;
     background-color: rgba(153, 204, 228, 0.8);
     border-radius: 0% 50%;
     box-shadow: #293462 5px 10px;
-    /* border: red 3px solid; */
 }
 
 .verticalOne {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    /* border: yellow 3px solid; */
 }
 
 .verticalTwo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: green 3px solid; */
 }
 
 .selector {
-    /* font-family: 'Merriweather', serif; */
     font-size: 15px;
-    -webkit-appearance: menulist-button; /* changed the appearance of the element*/
-    height: 35px; /* changed the element's size*/
+    -webkit-appearance: menulist-button; 
+    height: 35px;
     color: #293462; 
     border: none;
     border-radius: 5px;
@@ -134,12 +124,6 @@ h1 {
 }
 
 
-/* Vertical Adaptation */
-/* @media all and (max-height: 850px) {
-
-} */
-
-
 
  /* Horizontal Adaptation */
 @media all and (max-width: 768px) {
@@ -154,7 +138,7 @@ h1 {
     }
 }
 
-/* iphone11 757 x 830 */
+
 @media all and (max-width: 757px) {
     body {
         background-size: 756px 829px;
@@ -185,26 +169,6 @@ h1 {
     }
 }
 
-/* @media all and (max-width: 414px) {
-    body {
-        background-size: 413px 895px;
-    }
-
-    .insideContainer {
-        width: 77%;
-        flex-direction: column;
-    }
-
-    h1 {
-        font-size: 25px;
-    }
-    
-    .equalsContainer {
-        transform: rotate(-90deg);
-        margin-top: 5px;
-    }
-} */
-
 @media all and (max-width: 414px) {
     body {
         background-size: 413px 735px;
@@ -231,12 +195,6 @@ h1 {
     }
 }
 
-/* @media all and (max-width: 375px) {
-    body {
-        background-size: 374px 666px;
-    }
-} */
-
 @media all and (max-width: 320px) {
     body {
         background-size: 319px 567px;
@@ -250,43 +208,3 @@ h1 {
         font-size: 20px;
     }
 }
-
-
-/* РАЗМЕРЫ  */
-/* 6.7" (428 x 926 points @3x)
-iPhone 13 Pro Max, iPhone 12 Pro Max
-этот я сделала
-
-
-6.5" (414 x 896 points @3x)
-iPhone 11 Pro Max, iPhone XS Max
-этот я сделала
-
-6.1" (390 x 844 points @3x)
-iPhone 13 Pro, iPhone 13, iPhone 12 Pro, iPhone 12
-этот я сделала
-
-
-6.1" (414 x 896 points @2x)
-iPhone 11, iPhone XR
-этот я сделала
-
-5.8" (375 x 812 points @3x)
-iPhone 11 Pro, iPhone XS, iPhone X
-этот я сделала
-
-5.5" (414 x 736 points @3x)
-iPhone 8 Plus, iPhone 7 Plus, iPhone 6S Plus
-этот я сделала
-
-5.4" (375 x 812 points @3x)
-iPhone 13 mini, iPhone 12 mini
-этот я сделала
-
-4.7" (375 x 667 points @2x)
-iPhone SE (2nd Gen), iPhone 8, iPhone 7, iPhone 6S
-этот я сделала
-
-4" (320 x 568 @2x)
-iPhone SE (1st Gen), iPod Touch (7th Gen) */
-/* этот я сделала */
