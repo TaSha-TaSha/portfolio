@@ -45,7 +45,6 @@ function startAnimation() {
   let firstTwoPages = firstPageCoord + secondPageCoord;
   let firstThreePages = firstTwoPages + thirdPageCoord;
 
-
   // Animation of the elements on scroll
   animates.forEach(item => {
     const itemHeight = item.clientHeight;
@@ -94,10 +93,6 @@ cvBtn.addEventListener('click', () => {
 cvClose.addEventListener('click', () => {
   cvPage.style.display = 'none';
 })
-
-// примечание:
-// мы в css .cv display: none - спрятали 
-// а в js .cvPage dispaly: block - показали. Так тоже можно разделять id и class
 
 cvClose.addEventListener('mousemove', () => {
   gsap.to('.cvClose', {scale: 2, duration: 1.5, rotation: 360, ease: 'slow'})
