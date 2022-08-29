@@ -25,7 +25,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: yellow 3px solid;
 }
 
 @keyframes gradient {
@@ -42,7 +41,6 @@ body {
     align-items: center;
     justify-content: space-evenly;
     perspective: 1800px;
-    border: red 3px solid;
 }
 
 .headerContainer {
