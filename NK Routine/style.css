@@ -13,7 +13,6 @@ body {
 .mainContainer {
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
 }
 
 .containerOne {
@@ -22,17 +21,12 @@ body {
     background-size: cover;
     background-position: center;
     flex: 1;
-    /* pдесь flex: 1 так как это ребенок для mainContainer */
     min-height: 100vh;
-    /* высота нужна, чтобы фото поместилось в контейнер */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* это параметры уже для родителя */
-    /* align-items: center чтобы уменьшить размер кнопки */
     margin-right: 0.5%;
     border: 2px outset;
-    /* то есть мы сделали и родитель и ребенок в одном контейнере */
     opacity: 1;
     transform: translate(0px, 0px);
 }
@@ -118,7 +112,6 @@ a {
     text-transform: uppercase;
     background-color: #FFD9C0;
     bottom: 100px;
-    /* left: 130px; */
     padding: 8px 20px;
     border-radius: 10px;
 }
