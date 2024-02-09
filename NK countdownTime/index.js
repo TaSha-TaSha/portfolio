@@ -52,7 +52,7 @@ function merryChristmas(){
     h1.textContent = 'MERRY CHRISTMAS!!! HO-HO-HO!';
     h1.classList.add('red');
     
-    h2.textContent = '2022';
+    h2.textContent = '2024';
     h2.classList.add('red');
 }
 
